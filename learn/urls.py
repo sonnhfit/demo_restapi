@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from course.views import GetAllCouse
+from course.views import GetAllCouse, index, Home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('course/', GetAllCouse.as_view())
+    path('course/', GetAllCouse.as_view()),
+    path('hello/', index, name='index'),
+    path('helo2/', Home.as_view())
 
 ]
