@@ -29,7 +29,7 @@ class GetAllCouse(APIView):
 
 
 def index(request):
-    return HttpResponse('xin chao')
+    return HttpResponse('xin chao day la function base view ')
 
 
 class Home(View):
